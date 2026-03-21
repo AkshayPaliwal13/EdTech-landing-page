@@ -26,6 +26,7 @@ body {
   font-family: "Agdasima", sans-serif;
   font-weight: 400;
   font-style: normal;
+ 
 }
 .main {
   max-width: 90%;
@@ -74,24 +75,6 @@ nav {
   background: #fc9d44;
   transform: scale(0.95);
 }
-
-.nav3 button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  text-transform: capitalize;
-  background: none;
-  color: white;
-  transition: all 0.3s ease; /* smooth transition */
-}
-
-
-/* .nav3 a .text-wrapper:hover{
-  background: #e8602e;
- color: wheat;
-} */
 
 .link {
   color: rgb(255, 255, 255);
@@ -148,7 +131,6 @@ nav {
 
 /* NAVBAR  RESPONSIVE */
 @media (max-width: 700px) {
-  
   .menu{
     display: block;
   }
@@ -157,14 +139,21 @@ nav {
     display: none;
   }
   .nav4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
   width: 100%;
-  height: 100%;
+  height: 60vh;
   text-align: center;
   padding: 10px 15px;
   border: 1px solid #f042033d;
   box-shadow: 0 1px 10px rgba(255, 85, 0, 0.432);
-  border-radius: 5px;
   background: linear-gradient(to bottom, #171212, #100b0b); 
+  
 }
 .nav4 ul {
   display: flex;
@@ -180,6 +169,14 @@ nav {
 } 
 .show{
   display: block;
+}
+.nav4 .link-btn{
+  background: #fe7900;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+.nav4 .link:active{
+  background: #000;
 }
 }
 
