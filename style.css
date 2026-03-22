@@ -136,6 +136,9 @@ nav {
 
 /*------------------------------- NAVBAR  RESPONSIVE -----------------------------*/
 @media (max-width: 700px) {
+  /* .main{
+    height: 80vh;
+  } */
   .menu{
     display: block;
   }
@@ -809,6 +812,12 @@ nav {
   background: #3f3c3c;
 }
 
+@media (max-width: 700px){
+  .review-cards{
+    width: 350px;
+  }
+}
+
 /* ---------------footer-------------------- */
 .footer-container {
   /* max-width: 1200px; */
@@ -818,11 +827,13 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding-right: 5px;
 }
 
 .left-footer {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   width: 45%;
 }
 .left-footer img {
@@ -832,7 +843,6 @@ nav {
   display: flex;
   gap: 20px;
   font-size: 25px;
-  margin-left: 30px;
 }
 .social-icon a {
   color: #ffff;
@@ -876,7 +886,6 @@ nav {
 }
 .right-footer .contact a {
   color: oklab(0.999994 0.0000455677 0.0000200868 / 0.6);
-
   text-decoration: none;
   text-transform: capitalize;
   line-height: normal;
@@ -889,7 +898,7 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width:1030px){
+@media (max-width:1030px) {
   .footer-container{
     flex-direction: column;
     gap: 50px;
@@ -897,8 +906,6 @@ nav {
     margin-bottom: 20px;
   }
   .social-icon {
-  margin-left: 0px;
+  margin-left: 5px;
 }
-.left-footer img {
-margin-left: -40px;}
 }
