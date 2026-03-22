@@ -20,9 +20,14 @@
 body::-webkit-scrollbar {
   display: none;
 }
+/* html,
 body {
-  background: #000;
-  color: aliceblue;
+  overflow-x: hidden;
+  width: 100%;
+} */
+body {
+  background: #0C2D57;
+  color: white;
   font-family: "Agdasima", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -62,17 +67,17 @@ nav {
 .nav2 ul a {
   outline: none;
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(246, 243, 243);
   padding: 10px 20px;
   border-radius: 10px;
   transition: all 0.3s ease;
 
 }
 .nav2 ul a:hover{
-  background: #f97900;
+  background: #FC6736;
 }
 .nav2 ul a:active{
-  background: #fc9d44;
+  background: #FC6736;
   transform: scale(0.95);
 }
 
@@ -139,18 +144,17 @@ nav {
     display: none;
   }
   .nav4 {
-    
-  /* position: fixed;
-  top: 0;
+  /* position: fixed;   /* ✅ important */
+  /* top: 0;
   left: 0; */
-  width: 100%;
-  height: 60vh;
+  width: 100%; 
+  height: 30vh;
   text-align: center;
   padding: 10px 15px;
   border: 1px solid #f042033d;
   box-shadow: 0 1px 10px rgba(255, 85, 0, 0.432);
   background: linear-gradient(to bottom, #171212, #100b0b); 
-  
+  z-index: 1000;
 }
 .nav4 ul {
   display: flex;
@@ -165,7 +169,11 @@ nav {
   color: whitesmoke;
 } 
 .show{
-  display: block;
+  display: flex  !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 }
 
@@ -182,7 +190,7 @@ nav {
 
 .text-container > p {
   font-size: 18px;
-  color: rgb(232, 96, 46);
+  color: #FC6736;
   font-weight: 400;
   text-transform: uppercase;
   text-shadow:
@@ -205,7 +213,7 @@ nav {
 
 .text-container h1 .span {
   background: #94320e42;
-  border: 1px solid white;
+  border: 1px solid #EFECEC;
   border-top-left-radius: 47px;
   border-bottom-right-radius: 47px;
   border-block-end-color: #fe7900;
@@ -246,7 +254,7 @@ nav {
   font-size: 13.5px;
   font-weight: 700;
   line-height: 21px;
-  color: rgb(232, 96, 46);
+  color: #FC6736;
 }
 .learning-img .text h4 {
   font-size: 13.5px;
@@ -256,7 +264,7 @@ nav {
 }
 
 .btn button {
-  background: rgb(232, 96, 46);
+  background: #FC6736;
   outline: none;
   border: none;
   padding: 12px 15px;
@@ -266,7 +274,8 @@ nav {
   line-height: 21px;
   color: rgb(255, 255, 255);
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 85px;
 }
 .btn button:hover {
   color: #ffffff;
@@ -313,9 +322,9 @@ nav {
   }
 }
 
-/*----------------------- testimonials card section------------------------------- */
+/*----------------------- testimonial card section------------------------------- */
 .second-main {
-  background: #fff3ef;
+  background: #FFB0B0;
   color: rgb(0, 0, 0);
   border-radius: 20px;
 }
@@ -331,7 +340,8 @@ nav {
 }
 .title-heading p {
   display: inline-block;
-  background: #853d26;
+  color: white;
+  background: #0C2D57;
   border: 2px solid wheat;
   border-top-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -351,7 +361,7 @@ nav {
   margin: auto;
   display: flex;
   align-items: center;
-  background: rgb(247, 245, 245);
+  background: #F0F3FF;
   border: 1px solid rgba(202, 202, 202, 0.5);
   border-radius: 20px;
   padding: 20px;
@@ -362,7 +372,7 @@ nav {
   margin-bottom: 50px;
 }
 
-/* media ------------------------------------ */
+/*------------------------- media ------------------------------------ */
 
 .card .left-part {
   max-width: 42%;
@@ -442,16 +452,15 @@ nav {
 
 .right-part > .btn button {
   margin: 10px 0;
-  background: black;
-  color: white;
+ background: #0C2D57;
+  color: #ffffff;  
 }
 .right-part > .btn button:hover {
   box-shadow: none;
 }
 
 .card:nth-last-child(1) {
-  background: #000000;
-  color: white;
+  background: #EFECEC;
 }
 .card:nth-last-child(1) .left-part {
   max-width: 42%;
@@ -463,11 +472,11 @@ nav {
   padding: 0;
 }
 .card:nth-last-child(1) .right-part > .btn button {
-  background: #ffffff;
-  color: #000;
+  background: #0C2D57;
+  color: #ffffff;
 }
 .card:nth-last-child(1) .right-part > p {
-  color: rgba(243, 243, 243, 0.74);
+  color: rgba(8, 8, 8, 0.74);
   margin-top: 0;
 }
 
@@ -477,13 +486,13 @@ nav {
   flex-wrap: wrap;
 }
 .card:nth-last-child(1) {
-  color: white;
+  color: rgb(10, 10, 10);
 }
 .card:nth-last-child(1) h3 span {
-  color: white;
+  color: rgb(13, 13, 13);
 }
 .card:nth-last-child(2) {
-  background: #e35927;
+  background: #0C2D57;
   color: #ffffff;
   flex-direction: row-reverse;
   gap: 0;
@@ -537,7 +546,7 @@ nav {
   }
 
   .card:nth-last-child(2) {
-    background: #e35927;
+    background: #0C2D57;
     color: #ffffff;
     flex-direction: column;
     gap: 0;
@@ -645,11 +654,9 @@ nav {
   width: 400px;
   padding: 20px;
   border-radius: 15px;
-
   /* Glass effect */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
 }
@@ -714,7 +721,7 @@ nav {
   }
 }
 
-/* review-------------------------------------------------------------- */
+/*------------------------------------- review---------------------------------------------- */
 
 .carousel {
   display: flex;
@@ -759,6 +766,9 @@ nav {
   gap: 10px;
   padding: 20px;
   border-radius: 20px;
+}
+.title-heading h1{
+  padding-top: 20px;
 }
 .card-top {
   display: flex;
